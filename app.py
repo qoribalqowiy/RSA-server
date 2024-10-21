@@ -5,7 +5,7 @@ import base64
 from flask_cors import CORS  # Import CORS module
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app)
 
 # Generate a new RSA key pair
 key = RSA.generate(2048)
